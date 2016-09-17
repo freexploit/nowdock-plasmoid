@@ -851,8 +851,8 @@ Component {
                 //fix wrong positioning of launchers....
                 for(var i=0; i<tasksModel.launcherList.length; ++i){
                    if ((tasksModel.launcherList[i] == LauncherUrlWithoutIcon) && (i != index)){
-                     //   console.log("ASDFSDFASDFASDF "+i + " - " + index + " - "+tasksModel.count);
-                        tasksModel.move(index, i);
+                     //   console.log("Moving"+i + " - " + index + " - "+tasksModel.count);
+                     //   tasksModel.move(index, i);
                     }
                 }
             }
