@@ -842,19 +842,19 @@ Component {
                     }
                 }
                 mainItemContainer.inAnimation = false;
-            }
-
-            function init(){
-                wrapper.tempScaleWidth = 0;
-                wrapper.tempScaleHeight = 0;
 
                 //fix wrong positioning of launchers....
                 for(var i=0; i<tasksModel.launcherList.length; ++i){
                    if ((tasksModel.launcherList[i] == LauncherUrlWithoutIcon) && (i != index)){
                      //   console.log("Moving"+i + " - " + index + " - "+tasksModel.count);
-                     //   tasksModel.move(index, i);
+                        tasksModel.move(index, i);
                     }
                 }
+            }
+
+            function init(){
+                wrapper.tempScaleWidth = 0;
+                wrapper.tempScaleHeight = 0;
             }
 
             function showWindow(){
